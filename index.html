@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EchoWave - Modern Podcast Platform</title>
+    <meta name="description"
+        content="Your gateway to endless podcast entertainment – explore, listen, and enjoy anywhere, anytime.">
+    <meta name="author" content="EchoWave">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light-theme">
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="logo-icon">🎙️</div>
+                    <span class="logo-text">EchoWave</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#podcasts" class="nav-link">Podcasts</a>
+                    <a href="#categories" class="nav-link">Categories</a>
+                    <a href="#about" class="nav-link">About</a>
+                </nav>
+
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" placeholder="Search podcasts..." class="search-input" id="searchInput">
+                    <span class="search-icon">🔎</span>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="header-actions">
+                    <button class="btn-icon" id="notificationBtn">
+                        🔔
+                        <span class="notification-dot"></span>
+                    </button>
+                    <button class="btn-icon" id="themeToggle">🌓</button>
+                    <button class="btn-icon mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-search">
+                    <input type="text" placeholder="Search podcasts..." class="search-input">
+                    <span class="search-icon">🔍</span>
+                </div>
+                <nav class="nav-mobile">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#podcasts" class="nav-link">Podcasts</a>
+                    <a href="#categories" class="nav-link">Categories</a>
+                    <a href="#about" class="nav-link">About</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="hero-badge">
+                    <span class="status-dot"></span>
+                    <span>Now Streaming</span>
+                </div>
+                <h1 class="hero-title">
+                    Dive Into a World of
+                    <span class="block gradient-text">Powerful Podcasts</span>
+                </h1>
+                <p class="hero-description">
+                    Explore gripping stories, expert voices, and deep conversations that spark curiosity 
+                    and inspire growth — all in one place.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">
+                        ▶️ Listen Now
+                    </button>
+                    <button class="btn btn-secondary">
+                        🎧 Explore Library
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">5K+</div>
+                        <div class="stat-label">Episodes</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">200+</div>
+                        <div class="stat-label">Shows</div> 
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">50L+</div>
+                        <div class="stat-label">Listeners</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="featured-card">
+                    <div class="featured-badges">
+                        <span class="badge badge-featured">⭐ Featured</span>
+                        <span class="badge badge-latest">🆕 Latest</span>
+                    </div>
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1581368135153-a506cf13b1e1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Featured Episode">
+                        <button class="play-button" data-episode="0">▶️</button>
+                    </div>
+                    <div class="featured-content">
+                        <h3>Redefining Tomorrow: AI & Us</h3>
+                        <p>Uncover how AI is seamlessly integrating into our daily lives and future tech.</p>
+                        <div class="featured-meta">
+                            <span>18:17 • 36.5K plays</span>
+                            <button class="btn-text" data-episode="0">Play Now</button>
+                        </div>
+                    </div>
+                    <div class="glass-effect">
+                        <div class="hero-audio-visualizer">
+                            <div class="audio-bar" style="height:8px"></div>
+                            <div class="audio-bar" style="height:16px"></div>
+                            <div class="audio-bar" style="height:12px"></div>
+                            <div class="audio-bar" style="height:20px"></div>
+                            <div class="audio-bar" style="height:6px"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Featured Podcasts -->
+    <section class="section" id="podcasts">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    🎧 Top Picks For You
+                </div>
+                <h2 class="section-title">
+                Discover Shows That
+                <span class="block gradient-text">Inspire & Entertain</span>
+            </h2>
+            <p class="section-description">
+                Explore a curated selection of trending podcasts across tech, business, wellness, 
+                and entertainment — brought to you by passionate creators worldwide.
+            </p>
+            </div>
+            <div class="podcasts-grid" id="podcastsGrid">
+                <!-- Podcasts will be populated by JavaScript -->
+            </div>
+            <div class="section-footer">
+                <button class="btn btn-outline">Browse All Episodes</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Episodes -->
+    <section class="section episodes-section">
+        <div class="container">
+            <div class="section-header-carousel">
+                <div>
+                    <div class="section-badge">
+                        📅 New Drops This Week
+                    </div>
+                    <h2 class="section-title">
+                        Tune Into the
+                        <span class="block gradient-text">Freshest Episodes</span>
+                    </h2>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="prevBtn">‹</button>
+                    <button class="carousel-btn" id="nextBtn">›</button>
+                </div>
+            </div>
+            <div class="episodes-carousel">
+                <div class="episodes-track" id="episodesTrack">
+                    <!-- Episodes will be populated by JavaScript -->
+                </div>
+            </div>
+            <div class="carousel-dots" id="carouselDots">
+                <!-- Dots will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    🎙️ Explore by Category
+                </div>
+                <h2 class="section-title">
+                    Discover Topics That
+                    <span class="block gradient-text">Speak to You</span>
+                </h2>
+                <p class="section-description">
+                    Dive into a wide range of podcast genres — from tech and business to wellness, 
+                music, comedy, and more. There’s something for everyone.
+                </p>
+            </div>
+            <div class="categories-grid" id="categoriesGrid">
+                <!-- Categories will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+<section class="section newsletter-section">
+    <div class="container">
+        <div class="newsletter-card">
+            <div class="newsletter-content">
+                <div class="section-badge">
+                    🔔 Stay in the Loop
+                </div>
+                <h2 class="section-title">Get the Latest in Your Inbox</h2>
+                <p class="section-description">
+                    Subscribe for personalized podcast picks, exclusive previews, and hand-picked playlists — delivered fresh each week.
+                </p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email address" class="newsletter-input"
+                        id="emailInput" required>
+                    <button type="submit" class="btn btn-primary">
+                        🎧 Subscribe
+                    </button>
+                </form>
+                <div class="newsletter-features">
+                    <div class="feature">
+                        <span class="feature-dot green"></span>
+                        <span>Weekly top picks</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-dot blue"></span>
+                        <span>Early episode previews</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-dot purple"></span>
+                        <span>Expert-curated lists</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-dot pink"></span>
+                        <span>No spam — just quality content</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">🎧</div>
+                        <span class="logo-text">EchoWave</span>
+                    </div>
+                    <p class="footer-description">
+                        Stream the best podcasts from around the globe. Stay curious, stay inspired — anytime, anywhere.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">𝕏</a>
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">💼</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <a href="#">Features</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">API</a>
+                        <a href="#">Docs</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="#">About Us</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Press</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="#">Blog</a>
+                        <a href="#">Help Center</a>
+                        <a href="#">Community</a>
+                        <a href="#">Guidelines</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-wrapper">
+                <div class="section-inner">
+                    <div class="section-text">
+                        <h3>Stay in the loop</h3>
+                        <p>Join our newsletter for fresh podcast drops and platform updates.</p>
+                    </div>
+                    <button class="subscribe-button">Subscribe to Newsletter</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie</a>
+                </div>
+                <div class="footer-copyright">
+                    © 2025 EchoWave. All rights reserved. <br>
+                    Made with <span style="color: red;">❤</span> by <a href="" target="_blank"
+                        style="text-decoration: none; color: #2563EB;">Pratik Chaudhari</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Audio Player -->
+    <div class="audio-player" id="audioPlayer" style="display: none;">
+        <div class="player-content">
+            <div class="player-info">
+                <img src="" alt="" class="player-image" id="playerImage">
+                <div class="player-details">
+                    <h4 class="player-title" id="playerTitle"></h4>
+                    <p class="player-description" id="playerDescription"></p>
+                </div>
+            </div>
+            <div class="player-controls">
+                <button class="player-btn" id="playPauseBtn">▶️</button>
+                <div class="progress-container">
+                    <div class="progress-time">
+                        <span id="currentTime">0:00</span>
+                        <span>/</span>
+                        <span id="duration">0:00</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                        <input type="range" min="0" max="100" value="0" class="progress-slider" id="progressSlider">
+                    </div>
+                </div>
+            </div>
+            <div class="player-actions">
+                <button class="player-btn" id="volumeBtn">🔊</button>
+                <input type="range" min="0" max="100" value="80" class="volume-slider" id="volumeSlider">
+                <button class="player-btn" id="playlistBtn">📋</button>
+                <button class="player-btn" id="closePlayerBtn">✕</button>
+            </div>
+        </div>
+        <div class="audio-visualizer" id="audioVisualizer">
+            <!-- Visualizer bars will be generated by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-to-top" id="scrollToTop">↑</button>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span class="toast-message" id="toastMessage"></span>
+    </div>
+
+    <!-- Hidden Audio Element -->
+    <audio id="audioElement" preload="metadata"></audio>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
