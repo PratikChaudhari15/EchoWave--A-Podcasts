@@ -2,6 +2,7 @@
 A sleek and modern podcast website that allows users to explore trending podcasts, listen to episodes, view categories, and enjoy smooth animations and an audio player with visualizer support. Built using HTML, CSS, and JavaScript.
 
 🚀 Features
+
 🔥 Featured Podcasts Section with rating, description, and subscriber info
 🎙️ Episode Carousel with smooth navigation
 🎧 Audio Player with Play/Pause, Seek, Volume, and Visualizer
